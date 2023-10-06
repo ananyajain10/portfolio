@@ -264,6 +264,9 @@ font-family: 'Playfair Display', serif;
     justify-content: center;
     margin: 5em;
     padding: 2em;
+    background-color: rgb(89, 88, 88);
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
 
 .skills-head{
@@ -271,8 +274,9 @@ font-family: 'Playfair Display', serif;
     align-items: center;
     justify-content: center;
     font-size: 5vw;
-    color: chocolate;
+    color: rgb(242, 247, 255);
     font-family: 'Libre Baskerville', serif;
+
 }
 
 .skills-container{
@@ -282,6 +286,7 @@ font-family: 'Playfair Display', serif;
     padding: 4em;
     border: 1px solid transparent;
     border-radius: 20px;
+    background-color:  rgb(22, 22, 22);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -305,3 +310,76 @@ font-family: 'Playfair Display', serif;
         font-size: 10vw;
     }
 }
+
+/* socials */
+
+.socials-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(89, 88, 88);
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.socials-container{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 5vh;
+        border-radius: 20px;
+        background-color:  rgb(255, 255, 255);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.socials-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    color: rgb(242, 247, 255);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.socials{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+@media (max-width:600px) {
+
+    .socials-box{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+       
+    }
+
+    .socials-head{
+        font-size: 10vw;
+    }
+    .socials-container{
+        display: flex;
+    flex-wrap: nowrap;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 40px;
+    width: 100%;
+        
+    }
+
+    
+
+    .socials{
+        font-size: 10px;
+    }
+
+    
+}
+
+
+
+
+
