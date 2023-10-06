@@ -14,7 +14,7 @@
 }
 
 .nav{
-    height: 100px;
+    height: 90px;
     width: 100%;
     background-color: transparent;  
     display: flex;
@@ -32,12 +32,20 @@
 .logo{
     font-size: 2vw;
     font-weight: 700;
+    
+
+    
+font-family: 'Playfair Display', serif;
+
 }
 
-.nav2-element{
-    font-size: 1vw;
 
-}
+
+.nav2 a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: black;
+} 
 
 .nav i{
     font-size: 1.6vw;
@@ -54,7 +62,7 @@
         font-size: 6vw;
     }
 
-    .nav h4{
+    .nav a{
         display: none;
     }
 
@@ -70,7 +78,7 @@
 
 .carousel{
   
-  color: wheat;
+  
   overflow: hidden;
   
 }
@@ -83,62 +91,64 @@
   width: 500%;
   left: 0;
   margin: 0;
-  animation: 8s slider infinite; 
-  background-color: black;
+  animation: 5s slider infinite; 
+  
  
 }
 
 .slide{
   float: left; 
   width: 20%;
-  font-size: 30px;
- 
-   
-   color: wheat;
+  color: wheat;
+  padding: 0;
+  background-color: black;
 }
 
 .slide h1{
    font-family: 'Lato', sans-serif;
    font-family: 'Pixelify Sans', cursive;
   
-   display: flex;
+   
 }
 .slide:nth-child(1){
-  font-size: 8vw;
-  /* text-align: center; */
-  display:flex;
-  justify-content: center;
-  align-items: center;
+    font-size: 9vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
   
   
 }
 .slide:nth-child(2){
-        font-size: 5vw;
-        justify-content:space-evenly ;
-        align-items: flex-end;
+    font-size: 9vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
         
 }
 .slide:nth-child(3){
-  font-size: 9vw;
-  justify-content:space-evenly ;
-  align-items: baseline;
+    font-size: 9vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 .slide:nth-child(4){
-  font-size: 5vw;
-         
-        display: flex;
-        position: absolute;
+    font-size: 9vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
        
         
 }
 
 .slide:nth-child(5){
-  font-size: 8vw;
-  justify-content: center;
-  align-items: center;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+    font-size: 9vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 
@@ -150,19 +160,19 @@
    }
    25%{
     left: -100%;
-   }
+   } 
    45%{
     left: -100%;
    }
    50%{
     left: -200%;
-   }
+   } 
    70%{
     left: -200%;
    }
    75%{
     left: -300%;
-   }
+   } 
    95%{
     left: -300%;
    }
@@ -179,22 +189,34 @@
 
     flex-direction: row;
     
-    
+    background-color: rgb(50, 49, 49);
     border: 1px solid rgb(122, 116, 116);
     border-radius: 20px;
 }
 
 .bio-1{
-    background-color: aliceblue;
+    background-color: rgb(0, 0, 0);
     width: 50%;
+    height: 100vh;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    overflow: hidden;
+    
+}
 
-
+.bio-img{
+    width: 100%;
+    height: 100%;
 }
 
 .bio-2{
     background-color: pink; 
+    border: 1px solid pink;
+    border-radius: 6px;
+
     color: grey;
     width: 60%;
+   
     font-size: 2vw;
     padding: 4vw;
     line-height: 1.5em;
@@ -202,5 +224,35 @@
     
    
 
+}
+
+
+
+@media (max-width:600px) {
+    .container{
+        flex-wrap: wrap;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .bio-1{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .bio-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .bio-2{
+        width: 100%;
+        height: 100%;
+        font-size: 4vw;
+    }
 }
 
