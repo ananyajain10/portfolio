@@ -522,8 +522,31 @@
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
-    
+    line-height: 27px;
+    color: #010000;
    
+   
+}.card{
+    color: black;
+}
+.card:hover{
+   animation-name: timeline-grow;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+}
+
+@keyframes timeline-grow {
+    0%{
+        background-color: azure;
+    }
+
+    100%{
+        
+       background-color: #837b7b;
+       color: beige;
+        font-size: 15px;
+    }
 }
 
 .checkpoint:nth-child(odd){
@@ -544,10 +567,7 @@
     
 }
 
-.checkpoint p{
-    line-height: 27px;
-    color: #0c0404;
-}
+
 
 /* socials */
 
@@ -587,6 +607,8 @@
     border: 1px solid transparent;
     border-radius: 20px;
 }
+
+
 
 @media (max-width:600px) {
 
