@@ -44,6 +44,47 @@
     color: black;
 } 
 
+.nav2-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav2-element::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    padding-top: 0.1;
+    background-color: #0c0404;
+    
+
+}
+
+.nav2-element:hover::after{
+    animation-name: lineplay;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes lineplay{
+    0%{
+        width: 0;
+
+    }
+
+    
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+
 
 
 .nav i{
