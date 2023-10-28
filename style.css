@@ -118,12 +118,13 @@
 .nav-toggle{
     position: relative;
     display: inline-block;
+    margin-right: 20px;
 }
 .nav-content{
     display: none;
     position: absolute;
-    z-index: 1000;
-}
+   
+} 
 
 
 .nav-toggle:hover .nav-content{
@@ -131,8 +132,9 @@
     flex-direction: row;
     left: -20em;
     top: 3em;
+    color: #010000;
     background-color: bisque;
-    z-index: 100;
+   
 }
 
 .nav-content a{
@@ -143,8 +145,8 @@
     padding: 0.3em 0.5em;
     font-size: 1em;
     margin-right: 4vw;
-    z-index: 1000;
-}
+   
+} 
 
 /* carousel */
 
@@ -179,7 +181,7 @@
   color: wheat;
  
   background-color: black;
-  font-size: 9vw;
+  font-size: 8vw;
     display:flex;
     
 }
@@ -558,6 +560,7 @@
 .timeline{
     margin: 5em auto;
     max-width: 34.15em;
+   
 }
 
 .checkpoint{
@@ -666,7 +669,7 @@
     }
 
     25%{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid rgb(0, 0, 0);
     }
 
     45%{
